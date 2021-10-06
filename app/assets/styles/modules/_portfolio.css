@@ -1,0 +1,16 @@
+.portfolio {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+
+  @mixin atSmall {
+    gap: 20px;
+  }
+}
+.portfolio-item {
+  &--description {
+    grid-column: span 2;
+  }
+}
