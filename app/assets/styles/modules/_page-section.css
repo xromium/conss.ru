@@ -1,5 +1,9 @@
 .page-section {
-  padding: 5rem 0;
+  padding: 2rem 0;
+
+  @mixin atSmall {
+    padding: 2.5rem 0;
+  }
 
   &--blue {
     background-color: $mainBlue;
@@ -7,5 +11,9 @@
 
   &--yellow {
     background-color: $mainYellow;
+  }
+
+  &--gray {
+    background-color: #f6f7fb;
   }
 }

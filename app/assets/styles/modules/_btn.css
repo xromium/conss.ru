@@ -1,0 +1,14 @@
+.btn {
+  text-decoration: none;
+  color: #000;
+  border: 3px solid #000;
+  padding: 1.2rem 2.5rem;
+  display: inline-block;
+  border-radius: 3rem;
+
+  &--orange {
+    background-color: #ff3d00;
+    border: 3px solid #ff3d00;
+    color: #fff;
+  }
+}

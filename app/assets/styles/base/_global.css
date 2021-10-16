@@ -1,11 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
-  color: #333;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  color: #282828;
+}
+
+p,
+ul {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.4;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+* {
+  box-sizing: border-box;
 }

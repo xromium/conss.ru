@@ -1,0 +1,8 @@
+.customers {
+  display: flex;
+  align-content: space-between;
+
+  img {
+    display: block;
+  }
+}

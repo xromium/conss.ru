@@ -3,121 +3,307 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet" type="text/css" />
-    <title>Clear View Escapes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" type="text/css" />
+    <title>Constructive solutions</title>
     <meta name="keywords" content="Travel going, planning, travel bundles, travel escapes" />
     <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you." />
   </head>
   <body>
-    <header>
-      <img src="assets/images/icons/clear-view-escapes.svg" />
-      <a href="#">Get in Touch</a>
-      <nav>
+    <header class="site-header">
+      <img class="site-header__icon" src="assets/images/constructive-solutions-logo.svg" />
+      <nav class="primary-nav">
         <ul>
-          <li><a href="#our-beginning">Our Beginning</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#services">Проектирование и строительство</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#about us">О нас</a></li>
         </ul>
       </nav>
+      <a href="#">Проконсультироваться</a>
+      <a href="#"><img src="assets/images/icons/search-icon.svg" alt="" /></a>
     </header>
 
-    <div class="large-hero page-section page-section--blue">
+    <div class="page-section page-section--blue">
       <div class="wrapper">
-        <h1 class="large-hero__title">Привет! Мы проектно-строительная компания. Решаем задачи по инфраструктурной интеграции.</h1>
-        <h2 class="large-hero__subtitle">Проектируем и строим с 2005 года. Применяем BIM, DBFO, EMS и другие передовые технологии.</h2>
-        <img src="assets/images/problem-solving.png" />
-        <p><a href="#">Get Started Today</a></p>
-        <p><a href="#">Get Started Today</a></p>
+        <div class="large-hero">
+          <h1 class="large-hero__title">Привет! <span>Мы проектно-строительная компания. Решаем задачи</span> по инфраструктурной интеграции.</h1>
+          <h2 class="large-hero__subtitle">Проектируем и строим опоры двойного назначения (ОДН) с 2013 года. Мосты, дороги, здания и сооружения - с 2005 года.</h2>
+          <img class="large-hero__image" src="assets/images/chess.svg" />
+          <div class="large-hero__btn-block">
+            <p><a href="#" class="btn">Об услугах</a></p>
+            <p><a href="#" class="btn btn--orange">Проконсультироваться</a></p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="our-beginning">
-      <h3 class="caption">Масштабные проекты для всей страны</h3>
-      <img src="assets/images/first-trip.jpg" alt="Couple walking down a street." />
-      <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe" />
-      <h2>Here&rsquo;s how we got started&hellip;</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+    <div class="page-section page-section--blue">
+      <div class="wrapper">
+        <h4 class="caption">Масштабные проекты для всей страны</h4>
+        <div class="overview">
+          <div class="overview__item">
+            <h3 class="overview__heading">Разработали более 60 типовых проектов для <span>инфраструктуры сотовой связи</span></h3>
+            <p>По ним построено более 4000 сооружений сотовой связи в Самаре, Ярославле, Волгограде, Сочи, Москве и Московской области.</p>
+            <p><a href="#" class="overview__link">Подробнее</a></p>
+          </div>
+          <div class="overview__item">
+            <h3 class="overview__heading">Реализовали более 25 проектов в сфере <span>гражданского и транспортного строительства</span></h3>
+            <p>Среди них проекты мостов, улично-дорожной сети и других инфраструктурных объектов.</p>
+            <p><a href="#" class="overview__link">Подробнее</a></p>
+          </div>
+          <div class="overview__item">
+            <h3 class="overview__heading">В работе проекты <span>переустройства и развития инфраструктуры</span> по программе реновации жилых домов (Москва)</h3>
+            <p><a href="#" class="overview__link">Подробнее</a></p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="features">
-      <img src="assets/images/icons/star.svg" />
-      <h2>Our Features</h2>
-
-      <img src="assets/images/icons/rain.svg" />
-      <h3>We&rsquo;ll Watch the Weather</h3>
-      <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
-
-      <img src="assets/images/icons/globe.svg" />
-      <h3>Global Guides</h3>
-      <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
-
-      <img src="assets/images/icons/wifi.svg" />
-      <h3>Wi-Fi Waypoints</h3>
-      <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
-
-      <img src="assets/images/icons/fire.svg" />
-      <h3>Survival Kit</h3>
-      <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+    <div class="page-section">
+      <div class="wrapper">
+        <h4 class="caption">Передовые концепции в работе</h4>
+        <div class="sustainability">
+          <h3 class="headline">Опираемся на <strong>лучшие практики,</strong> определяющие термин устойчивое проектирование</h3>
+          <img src="assets/images/sustainable-design.png" />
+        </div>
+      </div>
     </div>
 
-    <div id="testimonials">
-      <img src="assets/images/icons/comment.svg" />
-      <h2>Real Testimonials</h2>
-
-      <img src="assets/images/testimonial-jane.jpg" />
-      <h3>Jane Doe</h3>
-      <h3>9 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-
-      <img src="assets/images/testimonial-john.jpg" />
-      <h3>John Smith</h3>
-      <h3>4 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-
-      <img src="assets/images/testimonial-cat.jpg" />
-      <h3>Cat McKitty</h3>
-      <h3>6 Time Escaper</h3>
-      <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
+    <div class="page-section page-section--gray">
+      <div class="wrapper">
+        <h4 class="caption">Нам доверяют</h4>
+        <div class="customers">
+          <img src="assets/images/icons/mosproject-logo.png" />
+          <img src="assets/images/icons/su555-logo.png" />
+          <img src="assets/images/icons/eks-logo.png" />
+          <img src="assets/images/icons/mosproject-logo.png" />
+        </div>
+      </div>
     </div>
 
-    <div class="portfolio page-section">
-      <div class="portfolio-item portfolio-item--description">
-        <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
+    <div class="page-section page-section--blue">
+      <div class="wrapper">
+        <h4 class="caption">Что ещё?</h4>
+        <div class="large-hero">
+          <h2 class="large-hero__title">У нас есть <span>все компетенции и ресурсы</span> для выполнения функций основного подрядчика на любой стадии проектирования и строительства.</h2>
+          <img class="large-hero__image large-hero__image--narrow" src="assets/images/hero.svg" />
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 114.jpg" />
-        <p>МКАД, Липецкая улица</p>
+    </div>
+
+    <div id="application-form">
+      <form action=""></form>
+    </div>
+
+    <!-- Страница №2 Проектирование сотовой инфраструктуры-->
+
+    <div class="page-section">
+      <div class="wrapper">
+        <h4 class="caption">Комплексное проектирование инфраструктуры сотовой связи</h4>
+        <div class="cellsite">
+          <div class="cellsite__text-content">
+            <h1 class="headline"><strong>Проектируем и строим</strong> опоры двойного назначения <strong>с согласованием интересов</strong> всех участников</h1>
+            <ul class="cellsite__list">
+              <li>При строительстве и реконструкции участков улично-дорожной сети (вынос из пятна застройки).</li>
+              <li>При расширении дорог и/или изменении конфигурации перекрёстков и развязок.</li>
+              <li>При строительстве искусственных сооружений: мостов, эстакад, путепроводов.</li>
+              <li>При строительстве гражданских объектов, домов, торговых центров.</li>
+            </ul>
+          </div>
+          <img class="cellsite__image" src="assets/images/ODN-parts.png" />
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 115.jpg" />
-        <p>Проекты по юго-восточной хорде</p>
+    </div>
+
+    <div class="page-section">
+      <div class="wrapper">
+        <div class="cellsite">
+          <h3 class="headline headline--narrow">Закачик получает <strong>объект</strong>, сданный <strong>«под ключ»</strong></h3>
+          <div>
+            <p>Берём на себя все требуемые процедуры:</p>
+            <p>Сбор исходных данных > Проектирование > Сметный расчёт > Защита в ГАУ (Москва) > Согласование со всеми заинтересованными сторонами > Демонтаж действующей ОДН > Строительство новой ОДН > Настройка и вывод оборудования связи в эфир</p>
+          </div>
+        </div>
+        <div class="slider">
+          <p>Многолетний опыт проектирования ОДН всех возможных типов позволяет нам выполнять работы в сжатые сроки в соответствии с действующими нормативными актами. Строим ОДН «под ключ», экономя бюджет проекта и оперативно реагируя на изменения.</p>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 116.jpg" />
-        <p>Реконструкция ТК ЦУМ (Ховрино)</p>
+    </div>
+
+    <div class="cellsite page-section">
+      <h3>Закачик получает объект, сданный «под ключ»</h3>
+      <p>Берём на себя все требуемые процедуры:</p>
+    </div>
+
+    <div id="numbers">
+      <p>с 2013</p>
+      <p>годa строим опоры двойного назначения по всей стране</p>
+      <p>60+</p>
+      <p>типовых проектов ОДН разработано нашими инженерами</p>
+      <p>4000+</p>
+      <p>опор ОДН построено в Москве и области под нашим авторским надзором</p>
+      <img src="" alt="" />
+      <p>защищаем в Мосгосэкспертизе цены проектирования и строительства ОДН</p>
+    </div>
+
+    <div class="page-section page-section--blue">
+      <div class="wrapper">
+        <div class="large-hero large-hero--wide">
+          <h2 class="large-hero__title">С нами вы <span>быстрее получите готовый объект</span>, владея полной информацией о ходе работ: взаимодействуя с одним подрядчиком вместо множества контрагентов и согласующих организаций.</h2>
+          <img src="assets/images/running-man.svg" class="large-hero__image large-hero__image--narrow large-hero__image--top" />
+          <div class="large-hero__contacts">
+            <img src="assets/images/Vinogradov.png" alt="" />
+            <div class="large-hero__info">
+              <p>На связи Георгий Виноградов,</p>
+              <p>Директор</p>
+              <p>+7 (901)111-11-88</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 118.jpg" />
-        <p>Дмитровское ш., 127А</p>
+    </div>
+
+    <div>
+      <h4>Жителям коттеджных посёлков</h4>
+      <img src="" alt="" />
+      <p>Опора мешает или портит вид из окна? Перенесём.</p>
+      <img src="" alt="" />
+      <p>Не устраивает уровень сигнала на участке? Поставим опору.</p>
+      <img src="" alt="" />
+    </div>
+
+    <div>
+      <p><a href="#">Оставить заявку</a></p>
+    </div>
+
+    <!-- Страница №3 О команде-->
+
+    <div class="page-section page-section--yellow">
+      <div class="wrapper">
+        <h4 class="caption">Кто мы?</h4>
+        <div class="features">
+          <div class="feature-item feature-item--bluetext">
+            <img class="feature-item__icon" src="assets/images/icons/competence2.png" />
+            <p>Мы команда с многолетним опытом проектирования и управления строительством объектов среднего и крупного уровня в транспортной и гражданской сфере.</p>
+          </div>
+          <div class="feature-item feature-item--bluetext">
+            <img class="feature-item__icon" src="assets/images/icons/license.png" />
+            <p>Мы имеем все необходимые лицензии и разрешения. Добавить ещё какой-то текст чтобы было хоть сколько-то равномерное расперделение по обьему.</p>
+          </div>
+          <div class="feature-item feature-item--bluetext">
+            <img class="feature-item__icon" src="assets/images/icons/sro.png" />
+            <p>Мы являемся членом Ассоциации проектировщиков саморегулируемой организации «Объединение проектных организаций «ЭкспертПроект».</p>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 119.jpg" />
+    </div>
+
+    <div class="page-section page-section--yellow">
+      <div class="wrapper">
+        <h4 class="caption">Команда</h4>
+        <div class="features">
+          <div class="feature-item feature-item--employee">
+            <img class="feature-item__photo" src="assets/images/team/Vinogradov.png" />
+            <h5 class="feature-item__title">Георгий Виноградов</h5>
+            <p>Директор</p>
+          </div>
+          <div class="feature-item feature-item--employee">
+            <img class="feature-item__photo" src="assets/images/team/Didenko.png" />
+            <h5 class="feature-item__title">Кирилл Диденко</h5>
+            <p>Главный инженер проектов</p>
+          </div>
+          <div class="feature-item feature-item--employee">
+            <img class="feature-item__photo" src="assets/images/team/Sofronova.png" />
+            <h5 class="feature-item__title">Лада Софронова</h5>
+            <p>Главный инженер-конструктор</p>
+          </div>
+          <div class="feature-item feature-item--employee">
+            <img class="feature-item__photo" src="assets/images/team/Tzarev.png" />
+            <h5 class="feature-item__title">Александр Царёв</h5>
+            <p>Начальник ПТО</p>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 120.jpg" />
+    </div>
+
+    <div class="page-section">
+      <div class="wrapper">
+        <h4 class="caption">Принципы</h4>
+        <div class="features">
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/prof-design.png" />
+            <h5 class="feature-item__title">Профессионализм решений</h5>
+            <p>Детальная проработка проекта, разносторонние подходы и оценки, необычные методы проектирования и подходы к конструированию, сложные расчёты, выход за нормы для удовлетворительного результата.</p>
+          </div>
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/scale-projects.png" />
+            <h5 class="feature-item__title">Опыт масштабных проектов</h5>
+            <p>Большие проекты силами одной проектной организации не развернешь, и ими нужно управлять, разбить по районам, оркестрация, опыт есть.</p>
+          </div>
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/competence.png" />
+            <h5 class="feature-item__title">Широкий спектр компетенций</h5>
+            <p>Компетенции в смежных областях, начинали с проектов по развитию инфраструктуры, всеобъемлющие методики и подходы к расчетам, умеем работать с техническим мнением разных специалистов.</p>
+          </div>
+          <div class="feature-item">
+            <img class="feature-item__icon" src="assets/images/icons/always-online.png" />
+            <h5 class="feature-item__title">Всегда на связи</h5>
+            <p>Быстро реагируем, находимся в постоянной коммуникации с заказчиком и участниками проекта, разъясняем принятые решения, вносим корректировки даже после формальной сдачи проекта при необходимости.</p>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 121.jpg" />
+    </div>
+
+    <div class="page-section page-section--blue">
+      <div class="wrapper">
+        <h4 class="caption">Инструменты</h4>
+        <div class="large-hero large-hero--one-column">
+          <h2 class="large-hero__title">Мы максимально автоматизировали и <span>настроили процессы</span>, чтобы сосредоточиться на решении ваших задач.</h2>
+          <img class="large-hero__image large-hero__image--narrow" src="assets/images/bim-early-ages.svg" />
+        </div>
       </div>
-      <div class="portfolio-item portfolio-item--description">
-        <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 122.jpg" />
-      </div>
-      <div class="portfolio-item">
-        <img src="assets/images/Rectangle 123.jpg" />
+    </div>
+
+    <div class="page-section">
+      <div class="wrapper">
+        <div class="portfolio">
+          <div class="portfolio-item portfolio-item--description">
+            <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 114.jpg" />
+            <p>МКАД, Липецкая улица</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 115.jpg" />
+            <p>Проекты по юго-восточной хорде</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 116.jpg" />
+            <p>Реконструкция ТК ЦУМ (Ховрино)</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 118.jpg" />
+            <p>Дмитровское ш., 127А</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 119.jpg" />
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 120.jpg" />
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 121.jpg" />
+          </div>
+          <div class="portfolio-item portfolio-item--description">
+            <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 122.jpg" />
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/images/Rectangle 123.jpg" />
+          </div>
+        </div>
       </div>
     </div>
 

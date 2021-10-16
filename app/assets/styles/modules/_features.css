@@ -1,0 +1,61 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  column-gap: 65px;
+}
+
+.feature-item {
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 90px 1fr;
+
+  &__icon {
+    margin: auto;
+
+    @mixin atSmall {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    max-width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0.75em;
+    margin-bottom: 2em;
+
+    @mixin atSmall {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  &--bluetext {
+    color: $mainBlue;
+    font-size: 1.33rem;
+    grid-template-rows: 100px 1fr;
+  }
+
+  &--employee {
+    grid-template-rows: 285px 40px 120px;
+    margin: auto;
+
+    @mixin atSmall {
+      grid-template-rows: 315px 30px 120px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    @mixin atSmall {
+      p {
+        text-align: left;
+      }
+    }
+  }
+}

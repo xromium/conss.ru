@@ -1,0 +1,14 @@
+.cellsite {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+
+  &__list {
+    line-height: 1.4;
+    padding-right: 30px;
+  }
+
+  &__image {
+    margin-top: 0.67em;
+  }
+}
