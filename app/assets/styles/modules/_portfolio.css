@@ -1,14 +1,43 @@
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  &__filter {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 40px;
 
-  @mixin atSmall {
-    gap: 20px;
+    @mixin atSmall {
+      padding-bottom: 80px;
+    }
+
+    li {
+      list-style: none;
+      padding-right: 16px;
+      color: #9c9c9c;
+      font-size: 0.75rem;
+      cursor: pointer;
+
+      @mixin atSmall {
+        padding-right: 32px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+
+    @mixin atSmall {
+      gap: 22px;
+    }
   }
 }
 .portfolio-item {
   &--description {
     grid-column: span 2;
+    padding: 25px;
+    font-size: 1.125rem;
   }
 }

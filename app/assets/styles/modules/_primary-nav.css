@@ -1,6 +1,4 @@
 .primary-nav {
-
-
   &--pull-right {
     float: right;
   }
@@ -8,18 +6,21 @@
   ul {
     margin: 0;
     padding: 0;
-    @mixin clearfix;
   }
 
   li {
     list-style: none;
-    float: left;
+    display: block;
     padding-right: 20px;
+
+    @mixin atSmall {
+      display: inline-block;
+    }
   }
 
   a {
-    color: #FFF;
-    font-weight: 300;
+    color: #282828;
+    font-weight: 700;
     text-decoration: none;
     display: block;
     padding: 12px 0;

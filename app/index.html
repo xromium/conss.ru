@@ -10,22 +10,38 @@
   </head>
   <body>
     <header class="site-header">
-      <img class="site-header__icon" src="assets/images/constructive-solutions-logo.svg" />
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="#services">Проектирование и строительство</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#about us">О нас</a></li>
-        </ul>
-      </nav>
-      <a href="#">Проконсультироваться</a>
-      <a href="#"><img src="assets/images/icons/search-icon.svg" alt="" /></a>
+      <div class="wrapper">
+        <div class="site-header__logo">
+          <img src="assets/images/constructive-solutions-logo.svg" />
+        </div>
+        <div class="site-header__menu-icon"></div>
+
+        <div class="site-header__menu-content">
+          <nav class="primary-nav">
+            <ul>
+              <li>
+                <a href="#services"
+                  >Проектирование и строительство <span><img src="assets/images/icons/dropdown.svg" alt="" /></span
+                ></a>
+              </li>
+              <li><a href="#portfolio">Портфолио</a></li>
+              <li><a href="#aboutus">О нас</a></li>
+            </ul>
+          </nav>
+          <div class="site-header__btn-container">
+            <a href="#" class="btn btn--orange">Проконсультироваться</a>
+            <div class="site-header__search-icon">
+              <a href="#"><img src="assets/images/icons/search-icon.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="page-section page-section--blue">
+    <div class="page-section page-section--t-padding page-section--blue">
       <div class="wrapper">
         <div class="large-hero">
-          <h1 class="large-hero__title">Привет! <span>Мы проектно-строительная компания. Решаем задачи</span> по инфраструктурной интеграции.</h1>
+          <h1 class="large-hero__title">Привет! <strong>Мы проектно-строительная компания. Решаем задачи</strong> по инфраструктурной интеграции.</h1>
           <h2 class="large-hero__subtitle">Проектируем и строим опоры двойного назначения (ОДН) с 2013 года. Мосты, дороги, здания и сооружения - с 2005 года.</h2>
           <img class="large-hero__image" src="assets/images/chess.svg" />
           <div class="large-hero__btn-block">
@@ -84,8 +100,8 @@
       <div class="wrapper">
         <h4 class="caption">Что ещё?</h4>
         <div class="large-hero">
-          <h2 class="large-hero__title">У нас есть <span>все компетенции и ресурсы</span> для выполнения функций основного подрядчика на любой стадии проектирования и строительства.</h2>
-          <img class="large-hero__image large-hero__image--narrow" src="assets/images/hero.svg" />
+          <h2 class="large-hero__title large-hero__title--main-contractor">У нас есть <strong>все компетенции и ресурсы</strong> для выполнения функций основного подрядчика на любой стадии проектирования и строительства.</h2>
+          <img class="large-hero__image large-hero__image--main-contractor" src="assets/images/hero.svg" />
         </div>
       </div>
     </div>
@@ -147,13 +163,13 @@
 
     <div class="page-section page-section--blue">
       <div class="wrapper">
-        <div class="large-hero large-hero--wide">
-          <h2 class="large-hero__title">С нами вы <span>быстрее получите готовый объект</span>, владея полной информацией о ходе работ: взаимодействуя с одним подрядчиком вместо множества контрагентов и согласующих организаций.</h2>
-          <img src="assets/images/running-man.svg" class="large-hero__image large-hero__image--narrow large-hero__image--top" />
+        <div class="large-hero">
+          <h2 class="large-hero__title large-hero__title--finished">С нами вы <strong>быстрее получите готовый объект</strong>, владея полной информацией о ходе работ: взаимодействуя с одним подрядчиком вместо множества контрагентов и согласующих организаций.</h2>
+          <img class="large-hero__image large-hero__image--finished" src="assets/images/running-man.svg" />
           <div class="large-hero__contacts">
-            <img src="assets/images/Vinogradov.png" alt="" />
+            <img class="large-hero__photo" src="assets/images/Vinogradov.png" alt="" />
             <div class="large-hero__info">
-              <p>На связи Георгий Виноградов,</p>
+              <p>На связи <strong>Георгий Виноградов</strong>,</p>
               <p>Директор</p>
               <p>+7 (901)111-11-88</p>
             </div>
@@ -265,43 +281,53 @@
 
     <div class="page-section">
       <div class="wrapper">
+        <h4 class="caption">Инфраструктура сотовой сязи</h4>
+
         <div class="portfolio">
-          <div class="portfolio-item portfolio-item--description">
-            <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 114.jpg" />
-            <p>МКАД, Липецкая улица</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 115.jpg" />
-            <p>Проекты по юго-восточной хорде</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 116.jpg" />
-            <p>Реконструкция ТК ЦУМ (Ховрино)</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 118.jpg" />
-            <p>Дмитровское ш., 127А</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 119.jpg" />
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 120.jpg" />
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 121.jpg" />
-          </div>
-          <div class="portfolio-item portfolio-item--description">
-            <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 122.jpg" />
-          </div>
-          <div class="portfolio-item">
-            <img src="assets/images/Rectangle 123.jpg" />
+          <ul class="portfolio__filter">
+            <li data-target="all">Все проекты</li>
+            <li data-target="odn">Опоры двойного назначения</li>
+            <li data-target="bunker">Инновации (бункер)</li>
+            <li data-target="other">Другие проекты</li>
+          </ul>
+          <div class="portfolio__content">
+            <!--<div class="portfolio-item portfolio-item--description">
+              <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
+            </div>-->
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 114.jpg" />
+              <p>МКАД, Липецкая улица</p>
+            </div>
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 115.jpg" />
+              <p>Проекты по юго-восточной хорде</p>
+            </div>
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 116.jpg" />
+              <p>Реконструкция ТК ЦУМ (Ховрино)</p>
+            </div>
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 118.jpg" />
+              <p>Дмитровское ш., 127А</p>
+            </div>
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 119.jpg" />
+            </div>
+            <div data-item="bunker" class="portfolio-item">
+              <img src="assets/images/Rectangle 120.jpg" />
+            </div>
+            <div data-item="odn" class="portfolio-item">
+              <img src="assets/images/Rectangle 121.jpg" />
+            </div>
+            <div data-item="odn" class="portfolio-item portfolio-item--description">
+              <p>Выстроенные коммуникации с операторами сотовой связи, электроснабжающими организациями и другими заинтересованными сторонами позволяют оперативно получать необходимую рабочую документацию (технические условия) для подготовки проекта и быстро согласовывать технические решения.</p>
+            </div>
+            <div data-item="other" class="portfolio-item">
+              <img src="assets/images/Rectangle 122.jpg" />
+            </div>
+            <div data-item="bunker" class="portfolio-item">
+              <img src="assets/images/Rectangle 123.jpg" />
+            </div>
           </div>
         </div>
       </div>
