@@ -3,6 +3,11 @@
   margin-bottom: 1.5rem;
   max-width: 300px;
 
+  &--portfolio {
+    display: inline-block;
+    padding-left: 60px;
+  }
+
   @mixin atSmall {
     font-size: 1.33rem;
     margin-bottom: 3rem;

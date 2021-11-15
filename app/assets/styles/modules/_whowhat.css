@@ -1,0 +1,61 @@
+.whowhat {
+  &__intro {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @mixin atSmall {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      column-gap: 100px;
+    }
+  }
+
+  &__procedures {
+    padding-top: 1.2rem;
+  }
+
+  &__client-types {
+    max-width: 800px;
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 25px;
+
+      @mixin atSmall {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+
+    &--active {
+      font-weight: 700;
+      position: relative;
+    }
+    &--active::before {
+      content: "";
+      position: absolute;
+      bottom: -0.75rem;
+      width: 30px;
+      height: 1px;
+      color: #000;
+    }
+  }
+
+  &__client-benefits {
+    max-width: 630px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    p {
+      font-size: 1.5rem;
+      color: $mainBlue;
+    }
+  }
+}

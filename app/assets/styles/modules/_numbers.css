@@ -1,0 +1,27 @@
+.numbers {
+  display: grid;
+  text-align: center;
+
+  @mixin atSmall {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 12px;
+    padding-top: 50px;
+
+    @mixin atSmall {
+      font-size: 3.875rem;
+    }
+  }
+
+  &__image {
+    text-align: center;
+    padding-top: 50px;
+  }
+}

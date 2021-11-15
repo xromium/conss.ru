@@ -1,0 +1,31 @@
+.project {
+  @mixin atSmall {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 100px;
+    column-gap: 150px;
+  }
+
+  &__gallery {
+    @mixin atSmall {
+      grid-column: span 2;
+    }
+  }
+
+  &__summary {
+    margin-top: 50px;
+
+    @mixin atSmall {
+      margin-top: 0;
+    }
+  }
+
+  &__summary h5 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  &__summary p {
+    margin-top: 0;
+  }
+}

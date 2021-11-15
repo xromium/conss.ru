@@ -1,0 +1,19 @@
+.contacts {
+  text-align: center;
+
+  &__tglink {
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__qr {
+    padding: 50px 0 100px;
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+
+    @mixin atSmall {
+      max-width: 215px;
+    }
+  }
+}
