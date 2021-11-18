@@ -88,12 +88,12 @@
       <div class="wrapper">
         <h4 class="caption">Нам доверяют</h4>
         <div class="customers">
-          <div><img src="assets/images/customers/mosproject-logo.png" /></div>
-          <div><img src="assets/images/customers/su555-logo.png" /></div>
-          <div><img src="assets/images/customers/eks-logo.png" /></div>
-          <div><img src="assets/images/customers/intermost-logo.png" /></div>
-          <img src="assets/images/customers/mosengproject.png" />
-          <img src="assets/images/customers/fond-renova.png" />
+          <div class="customers__logo"><img src="assets/images/customers/mosproject-logo.png" /></div>
+          <div class="customers__logo"><img src="assets/images/customers/su555-logo.png" /></div>
+          <div class="customers__logo"><img src="assets/images/customers/eks-logo.png" /></div>
+          <div class="customers__logo"><img src="assets/images/customers/intermost-logo.png" /></div>
+          <div class="customers__logo"><img src="assets/images/customers/mosengproject.png" /></div>
+          <div class="customers__logo"><img src="assets/images/customers/fond-renova.png" /></div>
         </div>
       </div>
     </div>
@@ -117,8 +117,10 @@
           <input class="form__info" type="text" placeholder="Телефон*" />
           <input class="form__info" type="email" placeholder="Почта*" />
           <textarea class="form__about">Расскажите о проекте или задайте вопросы — мы скоро ответим.</textarea>
-          <label for="file-upload" class="form__file"> <img src="assets/images/skrepka.svg" /> Прикрепить файл</label>
-          <input id="file-upload" type="file" />
+          <div class="form__attachment">
+            <label for="file-upload" class="form__file"> <img src="assets/images/skrepka.svg" /> Прикрепить файл</label>
+            <input id="file-upload" type="file" />
+          </div>
           <input type="submit" value="Отправить" class="btn btn--orange" />
           <p class="form__personal">Нажимая на кнопку, соглашаюсь на обработку персональных данных.</p>
           <img class="form__image" src="assets/images/form-sender.svg" />
@@ -220,7 +222,7 @@
     <div class="page-section page-section--blue">
       <div class="wrapper">
         <div class="large-hero">
-          <h2 class="large-hero__title large-hero__title--finished">С нами вы <strong>быстрее получите готовый объект</strong>, владея полной информацией о ходе работ: взаимодействуя с одним подрядчиком вместо множества контрагентов и согласующих организаций.</h2>
+          <h2 class="large-hero__title large-hero__title--finished">С нами вы <strong>быстрее получите готовый объект</strong>: организуем работу с подрядчиками и получением согласований, информируя о ходе работ.</h2>
           <img class="large-hero__image large-hero__image--finished" src="assets/images/running-man.svg" />
           <div class="large-hero__contacts">
             <img class="large-hero__photo" src="assets/images/Vinogradov.png" alt="" />
@@ -428,8 +430,41 @@
       </div>
     </div>
 
-    <footer>
-      <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
+    <footer class="page-section page-section--black">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer__info">
+            <a href="" class="footer__logo"><img src="assets/images/icons/cslogo-white.png" alt="" /></a>
+            <p class="footer__copyright">&copy; 2021. <br />ООО Конструктивные решения. Все права защищены. Копирование материалов без активной ссылки на источник запрещено.</p>
+          </div>
+          <div class="footer__submenu">
+            <h5>Услуги проектирования</h5>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#" target="_blank">Инфраструктура сотовой связи</a></li>
+              <li><a class="footer__link" href="#" target="_blank">Транспортное строительство</a></li>
+              <li><a class="footer__link" href="#" target="_blank">Гражданское строительство</a></li>
+            </ul>
+          </div>
+          <div class="footer__submenu">
+            <h5>Портфолио</h5>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="#" target="_blank">Инфраструктура сотовой связи</a></li>
+              <li><a class="footer__link" href="#" target="_blank">Транспортное строительство</a></li>
+              <li><a class="footer__link" href="#" target="_blank">Гражданское строительство</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <h5>О нас</h5>
+            <p>vg@conss.ru</p>
+            <p>+7 (901) 111-11-88</p>
+            <div class="footer__social">
+              <a class="footer__social-icon" href=""><img src="assets/images/icons/whatsapp-white.png" alt="" /></a>
+              <a class="footer__social-icon" href=""><img src="assets/images/icons/telegram-white.png" alt="" /></a>
+              <a class="footer__social-icon" href=""><img src="assets/images/icons/youtube-white.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
   <div class="modal">

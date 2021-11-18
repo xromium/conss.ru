@@ -32,4 +32,8 @@
   &--gray {
     background-color: #f6f7fb;
   }
+
+  &--black {
+    background-color: #282828;
+  }
 }

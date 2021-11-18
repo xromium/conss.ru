@@ -1,7 +1,22 @@
 .customers {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 80px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
-  img {
+  &__logo {
+    flex: 0 0 auto;
+    margin-right: 15px;
+
+    @mixin atSmall {
+      margin-right: 72px;
+    }
   }
 }
