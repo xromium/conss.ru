@@ -21,6 +21,10 @@
     }
   }
 
+  &--first {
+    padding: 9rem 0 2.5rem;
+  }
+
   &--blue {
     background-color: $mainBlue;
   }

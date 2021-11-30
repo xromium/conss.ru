@@ -1,3 +1,8 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+
+;// CONCATENATED MODULE: ./app/assets/scripts/modules/MobileMenu.js
 class MobileMenu {
   constructor() {
     this.menuIcon = document.querySelector(".site-header__menu-icon")
@@ -17,4 +22,15 @@ class MobileMenu {
   }
 }
 
-export default MobileMenu
+/* harmony default export */ const modules_MobileMenu = (MobileMenu);
+
+;// CONCATENATED MODULE: ./app/assets/scripts/App.js
+
+
+
+let mobileMenu = new modules_MobileMenu()
+
+if (false) {}
+
+/******/ })()
+;
