@@ -181,14 +181,17 @@
           <div class="whowhat__main">
             <div class="whowhat__client-types">
               <ul>
-                <li>Операторам связи</li>
-                <li class="whowhat__client-types whowhat__client-types--active">Генеральным проектировщикам</li>
-                <li>Инфраструктурным компаниям</li>
-                <li>Башенным компаниям</li>
+                <li class="whowhat__option" onclick="openCity(event, 'mno')" id="defaultOpen">Операторам связи</li>
+                <li class="whowhat__option" onclick="openCity(event, 'designers')">Генеральным проектировщикам</li>
+                <li class="whowhat__option" onclick="openCity(event, 'infra')">Инфраструктурным компаниям</li>
+                <li class="whowhat__option" onclick="openCity(event, 'towers')">Башенным компаниям</li>
               </ul>
             </div>
             <div class="whowhat__client-benefits">
-              <p>Многолетний опыт проектирования ОДН всех возможных типов позволяет нам выполнять работы в сжатые сроки в соответствии с действующими нормативными актами. Строим ОДН «под ключ», экономя бюджет проекта и оперативно реагируя на изменения.</p>
+              <p class="whowhat__content" id="mno">Берём на себя согласование этапов работ с госзаказчиком и генподрядчиком и оперативное информирование для учёта в плане модернизации сети. Новая точка размещения ОДН и комплект оборудования согласовывается с каждым оператором, позволяя обеспечить требуемое покрытие сети.</p>
+              <p class="whowhat__content" id="designers">Многолетний опыт проектирования ОДН всех возможных типов позволяет нам выполнять работы в сжатые сроки в соответствии с действующими нормативными актами. Строим ОДН «под ключ», экономя бюджет проекта и оперативно реагируя на изменения.</p>
+              <p class="whowhat__content" id="infra">Выполняем проектные и строительные работы в строгом соответствии с федеральными нормами и внутренними регламентами, материалами инженерных изысканий, обеспечивая безопасность инженерных коммуникаций, линий ВОЛС и пр.</p>
+              <p class="whowhat__content" id="towers">Решаем любые сопутствующие конструктивные задачи по переустройству тела опоры и фундамента, электроснабжения ОДН. Располагая высококвалифицированным персоналом, бережно относимся к имуществу компании в процессе демонтажа и строительства.</p>
             </div>
           </div>
           <div class="whowhat__intro">
@@ -205,15 +208,15 @@
       <div class="wrapper">
         <div class="numbers">
           <div class="numbers__fact">
-            <h5 class="numbers__heading">с 2013</h5>
+            <h5 class="numbers__heading">с <span class="numbers__digit" id="0101">2013</span></h5>
             <p>годa строим опоры двойного назначения по всей стране</p>
           </div>
           <div class="numbers__fact">
-            <h5 class="numbers__heading">60+</h5>
+            <h5 class="numbers__heading"><span class="numbers__digit" id="0102">60</span>+</h5>
             <p>типовых проектов ОДН разработано нашими инженерами</p>
           </div>
           <div class="numbers__fact">
-            <h5 class="numbers__heading">4000+</h5>
+            <h5 class="numbers__heading"><span class="numbers__digit" id="0103">4000</span>+</h5>
             <p>опор ОДН построено в Москве и области под нашим авторским надзором</p>
           </div>
           <div class="numbers__fact">
@@ -489,5 +492,6 @@
     <div class="modal__close">X</div>
   </div>
   This is the end of the "modal" reference HTML -->
+    <script src="./assets/scripts/modules/AnimatedDigits.js"></script>
   </body>
 </html>

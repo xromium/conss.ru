@@ -12,7 +12,7 @@
 
     @mixin atSmall {
       font-size: 2rem;
-      grid-column: 1 / span 6;
+      grid-column: 1 / span 7;
       grid-row: 1;
     }
 
@@ -21,7 +21,7 @@
     }
 
     @mixin atLarge {
-      font-size: 3rem;
+      font-size: 3.4rem;
     }
 
     &--main-contractor {
