@@ -5,6 +5,7 @@
   }
 
   &__title {
+    font-family: "Inter", sans-serif;
     font-size: 1.6rem;
     font-weight: 900;
     color: #fff;
@@ -64,18 +65,18 @@
 
     @mixin atSmall {
       font-size: 1.1rem;
+      grid-column: 1 / span 7;
+      grid-row: 2;
+    }
+
+    @mixin atMedium {
       grid-column: 1 / span 6;
       grid-row: 2;
     }
 
     @mixin atMedium {
-      grid-column: 1 / span 5;
-      grid-row: 2;
-    }
-
-    @mixin atMedium {
       font-size: 1.5rem;
-      grid-column: 1 / span 5;
+      grid-column: 1 / span 6;
       grid-row: 2;
     }
   }

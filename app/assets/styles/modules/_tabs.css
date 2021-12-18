@@ -1,0 +1,38 @@
+.tabs {
+  max-width: 764px;
+  margin: 0 auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+    margin-bottom: 91px;
+
+    @mixin atSmall {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    color: #9c9c9c;
+    text-decoration: none;
+  }
+
+  &__block {
+    font-size: 24px;
+    padding-left: 0;
+    color: #43c7ff;
+    display: none;
+
+    @mixin atSmall {
+      padding-left: 91px;
+    }
+
+    &:target {
+      display: block;
+    }
+  }
+}

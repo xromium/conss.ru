@@ -11,4 +11,199 @@
   &__image {
     margin-top: 0.67em;
   }
+
+  &__animations-container {
+    position: relative;
+    height: 537px;
+    width: 599px;
+    display: none;
+
+    @mixin atSmall {
+      display: initial;
+    }
+
+    &--small {
+      display: block;
+
+      @mixin atSmall {
+        display: none;
+      }
+    }
+  }
+
+  &__animations {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 537px;
+  }
+
+  &__circles {
+    height: 293px;
+    width: 293px;
+    animation: pulse 4s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+
+  &__circle {
+    height: 293px;
+    width: 293px;
+    border-radius: 50%;
+    background: #43c7ff;
+    opacity: 10%;
+    position: absolute;
+    transform: translate(0, 0);
+
+    &:nth-child(1) {
+      animation: circle-1 4s ease alternate infinite;
+    }
+
+    &:nth-child(2) {
+      animation: circle-2 4s ease alternate infinite;
+    }
+
+    &:nth-child(3) {
+      animation: circle-3 4s ease alternate infinite;
+    }
+
+    &:nth-child(4) {
+      animation: circle-4 4s ease alternate infinite;
+    }
+
+    &:nth-child(5) {
+      animation: circle-5 4s ease alternate infinite;
+    }
+
+    &:nth-child(6) {
+      animation: circle-6 4s ease alternate infinite;
+    }
+  }
+
+  &__circle-logo {
+    position: absolute;
+    left: 265px;
+    top: 245px;
+  }
+
+  &__text-block {
+    position: absolute;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #43c7ff;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    animation: fadeInUp 6s ease;
+  }
+}
+
+#rosseti {
+  left: 171px;
+  bottom: 0;
+  width: 176px;
+}
+
+#gorsvet {
+  left: 0;
+  bottom: 117px;
+  width: 110px;
+}
+
+#cod {
+  left: 0;
+  top: 111px;
+  width: 110px;
+}
+
+#civil {
+  left: 171px;
+  top: 0;
+  width: 242px;
+}
+
+#mno {
+  right: 0;
+  top: 111px;
+  width: 147px;
+}
+
+#vols {
+  right: 0;
+  bottom: 117px;
+  width: 131px;
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 93px);
+  }
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-69px, 35px);
+  }
+}
+
+@keyframes circle-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-69px, -35px);
+  }
+}
+
+@keyframes circle-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -93px);
+  }
+}
+
+@keyframes circle-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(69px, -35px);
+  }
+}
+
+@keyframes circle-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(69px, 35px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.15) rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0%,
+  80% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

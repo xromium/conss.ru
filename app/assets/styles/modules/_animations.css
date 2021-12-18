@@ -1,0 +1,30 @@
+:root {
+  --yellow-color: #fdffad;
+  --blue-color: #43c7ff;
+  --gray-color: #c4c4c4;
+}
+
+svg {
+  cursor: pointer;
+}
+
+#gray1 {
+  fill: var(--gray-color);
+  fill-opacity: 0.3;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+#blue1 {
+  fill: var(--blue-color);
+  fill-opacity: 0.3;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+#yellow1 {
+  fill: var(--yellow-color);
+  fill-opacity: 0.5;
+  stroke: #fff;
+  stroke-width: 3;
+}

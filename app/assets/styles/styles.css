@@ -10,6 +10,7 @@
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_sustainability";
+@import "modules/_animations";
 @import "modules/_overview";
 @import "modules/_reveal-item";
 @import "modules/_contacts";
@@ -20,6 +21,7 @@
 @import "modules/_features";
 @import "modules/_project";
 @import "modules/_whowhat";
+@import "modules/_tabs";
 @import "modules/_numbers";
 @import "modules/_rurals";
 @import "modules/_footer";
