@@ -3,6 +3,11 @@
   text-align: center;
 
   @mixin atSmall {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  @mixin atLarge {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
   }

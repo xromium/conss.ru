@@ -3,6 +3,7 @@ import throttle from "lodash/throttle"
 class StickyHeader {
   constructor() {
     this.siteHeader = document.querySelector(".site-header")
+    this.firstAnimation = document.querySelector(".sustainability__animations")
     this.events()
   }
 
@@ -18,6 +19,12 @@ class StickyHeader {
       this.siteHeader.classList.add("site-header--dark")
     } else {
       this.siteHeader.classList.remove("site-header--dark")
+    }
+
+    if (window.scrollY > 1360) {
+      this.firstAnimation.classList.add("sustainability__animations--animation-started")
+    } else {
+      this.firstAnimation.classList.remove("sustainability__animations--animation-started")
     }
   }
 }

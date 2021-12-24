@@ -12,11 +12,20 @@
     padding-left: 0;
   }
 
+  &__links li {
+    padding-bottom: 0.4rem;
+  }
+
   &__link {
     color: #fff;
+    text-decoration: none;
   }
 
   &__social-icon {
     padding-right: 20px;
   }
+}
+
+.footer h5 {
+  font-size: 1rem;
 }

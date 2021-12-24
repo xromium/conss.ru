@@ -1,38 +1,63 @@
 .tabs {
-  max-width: 764px;
+  max-width: 900px;
   margin: 0 auto;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
 
-  &__items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
-    margin-bottom: 91px;
-
-    @mixin atSmall {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-
-  &__item {
-    font-size: 18px;
-    color: #9c9c9c;
-    text-decoration: none;
-  }
-
-  &__block {
-    font-size: 24px;
-    padding-left: 0;
-    color: #43c7ff;
+  input {
     display: none;
+  }
 
-    @mixin atSmall {
-      padding-left: 91px;
-    }
+  input + label {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #9c9c9c;
+    max-width: 150px;
+    padding-bottom: 20px;
+    cursor: pointer;
 
-    &:target {
-      display: block;
+    @mixin atMedium {
+      font-size: 1.125rem;
+      max-width: 187px;
+      margin-left: 20px;
     }
+  }
+
+  #tab1 + label {
+    padding-right: 30px;
+  }
+
+  input ~ .tab {
+    display: none;
+  }
+
+  #tab1:checked ~ .tab.content1,
+  #tab2:checked ~ .tab.content2,
+  #tab3:checked ~ .tab.content3,
+  #tab4:checked ~ .tab.content4,
+  #tab5:checked ~ .tab.content5 {
+    display: block;
+  }
+
+  input:checked + label {
+    font-weight: 700;
+    color: #282828;
+  }
+}
+
+.tab {
+  color: $mainBlue;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  max-width: 90%;
+  margin: 45px auto 65px;
+
+  @mixin atSmall {
+    max-width: 80%;
+  }
+
+  @mixin atMedium {
+    font-size: 1.5rem;
+    max-width: 630px;
   }
 }

@@ -2,14 +2,39 @@
   @mixin atSmall {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 150px;
+    column-gap: 35px;
+  }
+
+  @mixin atMedium {
+    column-gap: 65px;
+  }
+
+  @mixin atLarge {
+    column-gap: 95px;
   }
 
   &__offer {
     font-size: 1.5rem;
 
-    @mixin atSmall {
+    @mixin atLarge {
       font-size: 2.25rem;
+    }
+  }
+
+  &__application {
+    display: flex;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: #282828;
+      font-family: "Noto Sans", sans serif;
+      font-weight: 700;
+      font-size: 1rem;
+
+      @mixin atMedium {
+        font-size: 1.33rem;
+      }
     }
   }
 }

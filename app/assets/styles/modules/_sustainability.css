@@ -1,16 +1,63 @@
 .sustainability {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+
+  @mixin atMedium {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
   &__animations {
     position: relative;
     width: 524px;
     height: 502px;
+    margin: 60px auto;
     display: none;
+
+    &--atsmall {
+      display: block;
+      margin-top: 60px;
+
+      @mixin atSmall {
+        display: none;
+      }
+    }
 
     @mixin atSmall {
       display: block;
+    }
+
+    &--animation-started #gray1 {
+      opacity: 1;
+      animation: moveG 1s;
+    }
+
+    &--animation-started #blue1 {
+      opacity: 1;
+      animation: moveB 1s;
+    }
+
+    &--animation-started #yellow1 {
+      opacity: 1;
+      animation: moveY 1s;
+    }
+
+    &--animation-started #economy,
+    &--animation-started #society,
+    &--animation-started #environment {
+      opacity: 1;
+      animation: dropIn 2s ease;
+    }
+
+    &--animation-started #optimization,
+    &--animation-started #demand,
+    &--animation-started #workability {
+      opacity: 1;
+      animation: dropIn2 4s ease;
+    }
+
+    &--animation-started #sustainability {
+      opacity: 1;
+      animation: fadeInUp 4s;
     }
   }
 
@@ -23,7 +70,18 @@
 }
 
 #gray1 {
-  animation: moveG 1s;
+  opacity: 0;
+  transform: opacity 1s ease-out;
+}
+
+#blue1 {
+  opacity: 0;
+  transform: opacity 1s ease-out;
+}
+
+#yellow1 {
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 @keyframes moveG {
@@ -36,10 +94,6 @@
   }
 }
 
-#blue1 {
-  animation: moveB 1s;
-}
-
 @keyframes moveB {
   from {
     transform: translate(70px, 67px);
@@ -48,10 +102,6 @@
   to {
     transform: translate(0, 0);
   }
-}
-
-#yellow1 {
-  animation: moveY 1s;
 }
 
 @keyframes moveY {
@@ -72,6 +122,8 @@
   letter-spacing: 0.7px;
   right: 38px;
   top: 135px;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 #society {
@@ -82,6 +134,8 @@
   letter-spacing: 0.7px;
   left: 51px;
   top: 135px;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 #environment {
@@ -92,12 +146,8 @@
   letter-spacing: 0.7px;
   left: 240px;
   bottom: 87px;
-}
-
-#economy,
-#society,
-#environment {
-  animation: dropIn 2s ease;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 @keyframes dropIn {
@@ -114,22 +164,22 @@
 #optimization {
   left: 203px;
   top: 83px;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 #demand {
   left: 77px;
   top: 267px;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 #workability {
   left: 312px;
   top: 267px;
-}
-
-#optimization,
-#demand,
-#workability {
-  animation: dropIn2 4s ease;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 @keyframes dropIn2 {
@@ -147,7 +197,8 @@
   font-weight: 700;
   left: 200px;
   top: 196px;
-  animation: fadeInUp 5s;
+  opacity: 0;
+  transform: opacity 1s ease-out;
 }
 
 @keyframes fadeInUp {

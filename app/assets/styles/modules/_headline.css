@@ -1,7 +1,12 @@
 .caption {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   max-width: 300px;
+  line-height: 1.4;
+
+  &--narrow {
+    max-width: 200px;
+  }
 
   &--portfolio {
     display: inline-block;

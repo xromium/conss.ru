@@ -1,7 +1,30 @@
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  column-gap: 65px;
+  &--three {
+    @mixin atMedium {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 65px;
+    }
+  }
+
+  &--four {
+    @mixin atSmall {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 65px;
+    }
+
+    @mixin atLarge {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 45px;
+    }
+
+    .feature-item__icon {
+      @mixin atSmall {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .feature-item {
@@ -12,11 +35,15 @@
   grid-template-rows: 100px 90px 1fr;
 
   &__icon {
-    margin: auto;
+    margin: 0 auto;
 
-    @mixin atSmall {
+    @mixin atMedium {
       margin: 0;
     }
+  }
+
+  &__photo {
+    margin: 0 auto;
   }
 
   &__title {
@@ -37,14 +64,18 @@
   &--bluetext {
     color: $mainBlue;
     font-size: 1.33rem;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 75px 1fr;
+
+    @mixin atMedium {
+      grid-template-rows: 100px 1fr;
+    }
   }
 
   &--employee {
     grid-template-rows: 285px 40px 120px;
     margin: auto;
 
-    @mixin atSmall {
+    @mixin atLarge {
       grid-template-rows: 315px 30px 120px;
     }
 

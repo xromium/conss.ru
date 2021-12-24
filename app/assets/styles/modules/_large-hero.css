@@ -1,15 +1,14 @@
 .large-hero {
+  display: grid;
+
   @mixin atSmall {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
   &__title {
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    color: #fff;
-    margin: 0;
+    color: #ffffff;
 
     @mixin atSmall {
       font-size: 2rem;
@@ -23,6 +22,7 @@
 
     @mixin atLarge {
       font-size: 3.4rem;
+      grid-column: 1 / span 8;
     }
 
     &--main-contractor {
@@ -42,8 +42,6 @@
     }
 
     &--automated {
-      padding-bottom: 100px;
-
       @mixin atSmall {
         grid-column: 3 / span 8;
         grid-row: 1;
@@ -56,20 +54,13 @@
   }
 
   &__subtitle {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #fff;
     line-height: 1.3;
     margin-bottom: 0;
-    margin-top: 50px;
 
     @mixin atSmall {
-      font-size: 1.1rem;
-      grid-column: 1 / span 7;
-      grid-row: 2;
-    }
-
-    @mixin atMedium {
       grid-column: 1 / span 6;
       grid-row: 2;
     }
@@ -82,11 +73,25 @@
   }
 
   &__image {
-    align-self: end;
+    padding-top: 2rem;
+    max-width: 85%;
+    justify-self: center;
 
     @mixin atSmall {
+      max-width: 100%;
+      align-self: end;
       grid-column: 8 / span 5;
       grid-row: 1 / span 2;
+    }
+
+    &--tmargin {
+      @mixin atSmall {
+        margin-top: 10rem;
+      }
+
+      @mixin atLarge {
+        margin-top: 12rem;
+      }
     }
 
     &--main-contractor {
@@ -98,10 +103,10 @@
     }
 
     &--finished {
-      padding: 25px 0;
+      display: none;
 
       @mixin atSmall {
-        padding: 0;
+        display: block;
         grid-column: 8 / span 5;
         grid-row: 1;
       }
@@ -117,6 +122,7 @@
 
   &__btn-block {
     text-align: center;
+    margin-top: 1rem;
 
     @mixin atSmall {
       grid-column: 1 / span 12;
@@ -137,7 +143,7 @@
 
     p {
       @mixin atSmall {
-        padding: 42px 12px 0;
+        padding: 24px 12px 0;
       }
     }
   }
@@ -145,13 +151,18 @@
   &__contacts {
     grid-column: 1 / span 12;
     display: flex;
+    margin-top: 50px;
 
     @mixin atSmall {
       grid-column: 1 / span 12;
-      grid-row: 3;
     }
 
     @mixin atMedium {
+      grid-column: 8 / span 5;
+      grid-row: 3;
+    }
+
+    @mixin atLarge {
       grid-column: 9 / span 4;
     }
 

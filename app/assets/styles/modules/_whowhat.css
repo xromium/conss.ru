@@ -1,9 +1,8 @@
 .whowhat {
   &__intro {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
-    @mixin atSmall {
+    @mixin atMedium {
       display: grid;
       grid-template-columns: 2fr 3fr;
       column-gap: 100px;
@@ -12,6 +11,15 @@
 
   &__procedures {
     padding-top: 1.2rem;
+  }
+
+  &__procedures p {
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+
+  &__procedures span {
+    color: $mainBlue;
   }
 
   &__client-types {

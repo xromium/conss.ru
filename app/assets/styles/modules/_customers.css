@@ -13,10 +13,21 @@
 
   &__logo {
     flex: 0 0 auto;
-    margin-right: 15px;
+    margin-right: 33px;
+    animation: tickerLogo 9s linear infinite;
 
     @mixin atSmall {
       margin-right: 72px;
     }
+  }
+}
+
+@keyframes tickerLogo {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-369.8px);
   }
 }
